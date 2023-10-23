@@ -37,11 +37,12 @@ The algorithm is taken by Mardia Kent and Bibby (1979, pg. 233--234). The percen
 where \eqn{\hat{\psi}} is asymptotically normal with mean \eqn{\psi} and variance
 \deqn{
 \tau^2 = \frac{2}{\left(n-1\right)\left(tr\pmb{\Sigma} \right)^2}\left[ \left(1-\psi\right)^2\left(\lambda_1^2+...+\lambda_k^2\right)+
-\psi^2\left(\lambda_{\kappa+1}^2+...\lambda_p^2\right) \right],
+\psi^2\left(\lambda_{\kappa+1}^2+...\lambda_p^2\right) \right] }{%
+ = \frac{2tr\pmb{\Sigma}^2}{\left(n-1\right)\left(tr\pmb{\Sigma} \right)^2}\left(\psi^2-2a\psi+a\right),
 }
 where
 \eqn{a=\left( \lambda_1^2+...+\lambda_k^2\right)/\left( \lambda_1^2+...+\lambda_p^2\right)}
-and \eqn{\text{tr}\pmb{\Sigma}^2=\lambda_1^2+...+\lambda_p^2}.
+and \eqn{\text{tr}\pmb{\Sigma}^2=\lambda_1^2+...+\lambda_p^2}
 
 The bootstrap version provides an estimate of the bias, defined as \eqn{\hat{\psi}_{boot}-\hat{\psi}} and confidence intervals calculated via the percentile method and via the standard (or normal) method Efron and Tibshirani (1993). The funciton gives the option to perform bootstrap.
 }
