@@ -1,9 +1,8 @@
 Package: choosepc
 Type: Package
-Title: Choose the Number of Principal Components via Recistruction Error
-Version: 1.0
-URL:
-Date: 2023-10-23
+Title: Choose the Number of Principal Components via Reconstruction Error
+Version: 1.1
+Date: 2023-10-24
 Authors@R: person("Michail", "Tsagris", role = c("aut", "cre"), email = "mtsagris@uoc.gr")
 Author: Michail Tsagris [aut, cre]
 Maintainer: Michail Tsagris <mtsagris@uoc.gr>
